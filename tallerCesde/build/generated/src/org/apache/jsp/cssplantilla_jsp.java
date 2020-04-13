@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class listatipo_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class cssplantilla_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -41,7 +41,6 @@ public final class listatipo_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write(' ');
       out.write("\n");
       out.write("\n");
       out.write("\n");
@@ -50,7 +49,7 @@ public final class listatipo_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t<head>\n");
       out.write("\t\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" />\n");
       out.write("\t\t<meta charset=\"utf-8\" />\n");
-      out.write("\t\t<title>Fahl Company</title>\n");
+      out.write("\t\t<title>Sowil Company</title>\n");
       out.write("\n");
       out.write("\t\t<meta name=\"description\" content=\"Wilson Castro Gil\" />\n");
       out.write("\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0\" />\n");
@@ -374,7 +373,7 @@ public final class listatipo_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t\t\t\t\t<img class=\"nav-user-photo\" src=\"assets/images/avatars/user.jpg\" alt=\"Wilcas Photo\" />\n");
       out.write("\t\t\t\t\t\t\t\t<span class=\"user-info\">\n");
       out.write("\t\t\t\t\t\t\t\t\t<small>Welcome,</small>\n");
-      out.write("\t\t\t\t\t\t\t\t\tFahl-Soft\n");
+      out.write("\t\t\t\t\t\t\t\t\tWilcas\n");
       out.write("\t\t\t\t\t\t\t\t</span>\n");
       out.write("\n");
       out.write("\t\t\t\t\t\t\t\t<i class=\"ace-icon fa fa-caret-down\"></i>\n");
@@ -489,7 +488,7 @@ public final class listatipo_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t\t\t\t\t<b class=\"arrow\"></b>\n");
       out.write("\t\t\t\t\t\t\t</li>\n");
       out.write("                                                        <li class=\"\">\n");
-      out.write("\t\t\t\t\t\t\t\t<a href=\"registrarTv.jsp\">\n");
+      out.write("\t\t\t\t\t\t\t\t<a href=\"#\">\n");
       out.write("\t\t\t\t\t\t\t\t\t<i class=\"menu-icon fa fa-caret-right\"></i>\n");
       out.write("\t\t\t\t\t\t\t\t\tRegistrar Tipo Vehículo\n");
       out.write("\t\t\t\t\t\t\t\t</a>\n");
@@ -769,7 +768,7 @@ public final class listatipo_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t<div class=\"footer-inner\">\n");
       out.write("\t\t\t\t\t<div class=\"footer-content\">\n");
       out.write("\t\t\t\t\t\t<span class=\"bigger-120\">\n");
-      out.write("\t\t\t\t\t\t\tFahl &copy; FahlSoft-2020\n");
+      out.write("\t\t\t\t\t\t\tWilson Castro Gil &copy; SoWil-2019\n");
       out.write("\t\t\t\t\t\t</span>\n");
       out.write("\n");
       out.write("\t\t\t\t\t\t&nbsp; &nbsp;\n");
@@ -1060,7 +1059,7 @@ public final class listatipo_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t})\n");
       out.write("\t\t</script>\n");
       out.write("\t</body>\n");
-      out.write("</html>");
+      out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

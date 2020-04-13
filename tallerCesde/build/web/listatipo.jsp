@@ -1,7 +1,7 @@
-<%-- 
+ <%-- 
     Document   : listatipo
     Created on : 11/04/2020, 05:54:07 PM
-    Author     : freddy
+    Author     : FAHL04258
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -10,7 +10,7 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
-		<title>Sowil Company</title>
+		<title>Fahl Company</title>
 
 		<meta name="description" content="Wilson Castro Gil" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -334,7 +334,7 @@
 								<img class="nav-user-photo" src="assets/images/avatars/user.jpg" alt="Wilcas Photo" />
 								<span class="user-info">
 									<small>Welcome,</small>
-									Wilcas
+									Fahl-Soft
 								</span>
 
 								<i class="ace-icon fa fa-caret-down"></i>
@@ -449,7 +449,7 @@
 								<b class="arrow"></b>
 							</li>
                                                         <li class="">
-								<a href="#">
+								<a href="registrarTv.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Registrar Tipo Vehículo
 								</a>
@@ -729,7 +729,7 @@
 				<div class="footer-inner">
 					<div class="footer-content">
 						<span class="bigger-120">
-							Wilson Castro Gil &copy; SoWil-2019
+							Fahl &copy; FahlSoft-2020
 						</span>
 
 						&nbsp; &nbsp;

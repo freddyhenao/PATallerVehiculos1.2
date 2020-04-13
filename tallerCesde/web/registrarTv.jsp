@@ -10,7 +10,7 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
-		<title>Sowil Company</title>
+		<title>Fahl Company</title>
 
 		<meta name="description" content="Wilson Castro Gil" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -334,7 +334,7 @@
 								<img class="nav-user-photo" src="assets/images/avatars/user.jpg" alt="Wilcas Photo" />
 								<span class="user-info">
 									<small>Welcome,</small>
-									Wilcas
+									Fahl
 								</span>
 
 								<i class="ace-icon fa fa-caret-down"></i>
@@ -431,10 +431,10 @@
 						<b class="arrow"></b>
 
 						<ul class="submenu">
-							<li class="active">
-								<a href="index.jsp">
+							<li class="">
+								<a href="listatipo.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Lista de Vehículos
+									Lista de Vehículo
 								</a>
 
 								<b class="arrow"></b>
@@ -591,45 +591,31 @@
 										<div>
                                                                                     <form action="tipovehiControlador"  method="post" class="form-horizontal" >
                                                                                         <div class="form-group" >
-                                                                                            <label class="col-sm-3 control-label">
+                                                                                            <label class="col-sm-3 control-label no-padding-right">
                                                                                                 Tipo de Vehiculo
                                                                                             </label>
+                                                                                            <div class="col-sm-9">
+                                                                                                <input type="text" name="txttv" value="" placeholder="ID Tipo Vehiculo"/>
+                                                                                            </div>
                                                                                         </div> 
+                                                                                        
+                                                                                         <div class="form-group" >
+                                                                                            <label class="col-sm-3 control-label no-padding-right">
+                                                                                                Nombre Tipo
+                                                                                            </label>
+                                                                                            <div class="col-sm-9">
+                                                                                                <input type="text" name="txtnomtv" value="" placeholder="Nombre"/>
+                                                                                            </div>
+                                                                                         </div>
+                                                                                        
+                                                                                        <button class="btn btn-success" type="submit">
+                                                                                            <i class="fa fa-save"></i>
+                                                                                            Registrar
+                                                                                        </button>
                                                                                     </form>
 										</div>
 
-											<div class="modal-footer no-margin-top">
-												<button class="btn btn-sm btn-danger pull-left" data-dismiss="modal">
-													<i class="ace-icon fa fa-times"></i>
-													Close
-												</button>
-
-												<ul class="pagination pull-right no-margin">
-													<li class="prev disabled">
-														<a href="#">
-															<i class="ace-icon fa fa-angle-double-left"></i>
-														</a>
-													</li>
-
-													<li class="active">
-														<a href="#">1</a>
-													</li>
-
-													<li>
-														<a href="#">2</a>
-													</li>
-
-													<li>
-														<a href="#">3</a>
-													</li>
-
-													<li class="next">
-														<a href="#">
-															<i class="ace-icon fa fa-angle-double-right"></i>
-														</a>
-													</li>
-												</ul>
-											</div>
+											
 										</div><!-- /.modal-content -->
 									</div><!-- /.modal-dialog -->
 								</div>
@@ -645,7 +631,7 @@
 				<div class="footer-inner">
 					<div class="footer-content">
 						<span class="bigger-120">
-							Wilson Castro Gil &copy; SoWil-2019
+							Fahl &copy; Fahl-2020
 						</span>
 
 						&nbsp; &nbsp;
