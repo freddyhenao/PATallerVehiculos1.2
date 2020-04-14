@@ -614,9 +614,11 @@
                                                                                         </button>
                                                                                     </form>
 										</div>
-
+                                                                                <div>
+                                                                                    <%=(request.getAttribute("mensaje") != null? request.getAttribute("mensaje"):"")%>                                                                                </div>
 											
-										</div><!-- /.modal-content -->
+										</div>
+                                                                                    <!-- /.modal-content -->
 									</div><!-- /.modal-dialog -->
 								</div>
 
