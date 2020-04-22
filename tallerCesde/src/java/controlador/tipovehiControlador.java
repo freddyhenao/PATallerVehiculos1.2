@@ -5,14 +5,14 @@
  */
 package controlador;
 
-import dao.TipodeVehiculoDAO;
+import dao.TipoVehiDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import modelo.TipoVehiculo;
+import modelo.tipovehi;
 
 /**
  *
@@ -34,7 +34,7 @@ public class tipovehiControlador extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-             
+            
         }
     }
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -49,8 +49,9 @@ public class tipovehiControlador extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //processRequest(request, response);
+       // processRequest(request, response);
     }
+
     /**
      * Handles the HTTP <code>POST</code> method.
      *
@@ -62,23 +63,22 @@ public class tipovehiControlador extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-    // Recibir los datos del form
-   
-   int IdTv = Integer.parseInt(request.getParameter("txttv"));
-   String NomTv= request.getParameter("txtnomtv");
-   
-   // Instaciar el modelo
-   TipoVehiculo tipoVehi = new TipoVehiculo();
-   tipoVehi.setIdtv(IdTv);
-   tipoVehi.setNomtv(NomTv);
-   
-   if(TipodeVehiculoDAO.insertartv(tipoVehi)){
-       request.setAttribute("mensaje","Tipo Vehiculo Registrado");
-   }else{
-       request.setAttribute("mensaje","Tipo Vehiculo No Registrado");
-   }
-   
-   request.getRequestDispatcher("regidstrarTv.jsp").forward(request, response);
+        // Recibir los datos del form
+        int IdTv = Integer.parseInt(request.getParameter("txttv"));
+        String NomTv =request.getParameter("txtnomtv");
+        
+        // Instaciar el modelo 
+        tipovehi tipoVehi= new tipovehi();
+        tipoVehi.setIdtv(IdTv);
+        tipoVehi.setNomtv(NomTv);
+        
+        if(TipoVehiDAO.insertartv(tipoVehi)){
+           request.setAttribute("mensaje","Tipo Vehiculo registrado");
+        }else{
+           request.setAttribute("mensaje","Tipo Vehiculo No registrado");
+        }
+        
+        request.getRequestDispatcher("registrarTv.jsp").forward(request, response);
     }
 
     /**

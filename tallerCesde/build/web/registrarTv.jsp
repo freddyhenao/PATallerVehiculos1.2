@@ -432,7 +432,7 @@
 
 						<ul class="submenu">
 							<li class="">
-								<a href="listatipo.jsp">
+								<a href="listarVehi.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Lista de Vehículo
 								</a>
@@ -611,11 +611,16 @@
                                                                                         <button class="btn btn-success" type="submit">
                                                                                             <i class="fa fa-save"></i>
                                                                                             Registrar
-                                                                                        </button>
+                                                                                        </button>    
+                                                                                        
+                                                                                        
+                                                                                        <div>
+                                                                                            <%=(request.getAttribute("mensaje")!= null? request.getAttribute("mensaje"):"" ) %>
+                                                                                        </div>
                                                                                     </form>
 										</div>
                                                                                 <div>
-                                                                                    <%=(request.getAttribute("mensaje") != null? request.getAttribute("mensaje"):"")%>                                                                                </div>
+                                                                                                                                                                  </div>
 											
 										</div>
                                                                                     <!-- /.modal-content -->

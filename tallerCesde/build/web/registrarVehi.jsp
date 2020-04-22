@@ -1,9 +1,5 @@
-<%-- 
-    Document   : registrarTv
-    Created on : 12/04/2020, 09:43:20 AM
-    Author     : FAHL0428
---%>
-
+<%@page import="modelo.tipovehi"%>  <!--importa los codigos para poderce usar -->
+<%@page import="dao.TipoVehiDAO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
@@ -569,7 +565,8 @@
 								Gestionar los Vehículos
 								<small>
 									<i class="ace-icon fa fa-angle-double-right"></i>
-                                                                Lista de Vehículos
+                                                                <!--Lista de Vehículos -->
+                                                                Vehículos
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
@@ -582,31 +579,74 @@
 								<div class="row">
 									<div class="col-xs-12">
 										<div class="table-header">
-											Registro Tipo de  Vehiculo
+											 Registro de  Vehículo
 										</div>
 
 										<!-- div.table-responsive -->
 
 										<!-- div.dataTables_borderWrap -->
 										<div>
-                                                                                    <form action="tipovehiControlador"  method="post" class="form-horizontal" >
+                                                                                    <form action="vehiControlador"  method="post" class="form-horizontal" >
                                                                                         <div class="form-group" >
                                                                                             <label class="col-sm-3 control-label no-padding-right">
-                                                                                                Tipo de Vehiculo
+                                                                                               ID Vehículo
                                                                                             </label>
                                                                                             <div class="col-sm-9">
-                                                                                                <input type="text" name="txttv" value="" placeholder="ID Tipo Vehiculo"/>
+                                                                                                <input type="text" name="txtv" value="" placeholder="ID del Vehiculo"/>
                                                                                             </div>
                                                                                         </div> 
                                                                                         
                                                                                          <div class="form-group" >
                                                                                             <label class="col-sm-3 control-label no-padding-right">
-                                                                                                Nombre Tipo
+                                                                                                Marca
                                                                                             </label>
                                                                                             <div class="col-sm-9">
-                                                                                                <input type="text" name="txtnomtv" value="" placeholder="Nombre"/>
+                                                                                                <input type="text" name="txtmarca" value="" placeholder="Marca del Vehiculo"/>
                                                                                             </div>
                                                                                          </div>
+                                                                                        
+                                                                                        <div class="form-group" >
+                                                                                            <label class="col-sm-3 control-label no-padding-right">
+                                                                                              Modelo
+                                                                                            </label>
+                                                                                            <div class="col-sm-9">
+                                                                                                <input type="text" name="txtmodelo" value="" placeholder="Modelo del Vehiculo"/>
+                                                                                            </div>
+                                                                                         </div>
+                                                                                        
+                                                                                        <div class="form-group" >
+                                                                                            <label class="col-sm-3 control-label no-padding-right">
+                                                                                              Placa 
+                                                                                            </label>
+                                                                                            <div class="col-sm-9">
+                                                                                                <input type="text" name="txtplaaca" value="" placeholder="Placa del Vehiculo"/>
+                                                                                            </div>
+                                                                                         </div> 
+                                                                                        
+                                                                                        <div class="form-group" >
+                                                                                            <label class="col-sm-3 control-label no-padding-right">
+                                                                                                AÑO
+                                                                                            </label>
+                                                                                            <div class="col-sm-9">
+                                                                                                <input type="text" name="txtanio" value="" placeholder="Año del Vehiculo"/>
+                                                                                            </div>
+                                                                                         </div>
+                                                                                        
+                                                                                        <div class="form-group" >
+                                                                                            <label class="col-sm-3 control-label no-padding-right">
+                                                                                                ID Tipo Vehiculo 
+                                                                                            </label>
+                                                                                            <div class="col-sm-9">
+                                                                                              
+                                                                                              <select name="txtidtv">
+                                                                                                  <option value="0">Seleccione un Tipo de Vehiculo</option>
+                                                                                                  <!--  Traer la lista de los vcehiculos foreign key-->
+                                                                                                  <%for (tipovehi tv: TipoVehiDAO.ListarTv()){%>
+                                                                                                  <opcion value="<%= tv.getIdtv()%>"><%= tv.getNomtv()%></opcion>
+                                                                                                  <% } %>
+                                                                                              </select>
+                                                                                            </div>
+                                                                                        </div>
                                                                                         
                                                                                         <button class="btn btn-success" type="submit">
                                                                                             <i class="fa fa-save"></i>

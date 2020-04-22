@@ -11,7 +11,7 @@ import java.io.Serializable;
  *
  * @author freddy
  */
-public class TipoVehiculo implements Serializable {
+public class tipovehi implements Serializable {
     // Atributos - propiedades 
     private int idtv;
     private String nomtv;
@@ -35,7 +35,7 @@ public class TipoVehiculo implements Serializable {
     
     //constructor vacio
 
-    public TipoVehiculo() {
+    public tipovehi() {
         this.idtv= 0;
         this.nomtv="";
     }
@@ -43,7 +43,7 @@ public class TipoVehiculo implements Serializable {
    
     //constructor con parametros 
 
-    public TipoVehiculo(int idtv, String nomtv) {
+    public tipovehi(int idtv, String nomtv) {
         this.idtv = idtv;
         this.nomtv = nomtv;
     }
